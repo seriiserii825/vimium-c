@@ -634,9 +634,12 @@ const defaultKeyMappings_: string =
   " b "    +AsC_("Vomnibar.activateBookmarks")             + " ge "    + AsC_("Vomnibar.activateUrl")                 +
   " gE "   +AsC_("Vomnibar.activateUrlInNewTab")           + " m "     + AsC_("Marks.activateCreate")                 +
   " p "    +AsC_("openCopiedUrlInCurrentTab")              + " yf "    + AsC_("LinkHints.activateCopyLinkUrl")        +
-  " B "    +AsC_("Vomnibar.activateBookmarksInNewTab")     + " F "     + AsC_("LinkHints.activateOpenInNewTab")       +
+  " B "    +AsC_("Vomnibar.activateBookmarksInNewTab")     + " F "     + AsC_("LinkHints.activateOpenInNewForegroundTab") +
   " O "    +AsC_("Vomnibar.activateInNewTab")              + " P "     + AsC_("openCopiedUrlInNewTab")                +
-  " T "    +AsC_("Vomnibar.activateTabs")                  + " <a-f> " + AsC_("LinkHints.activateWithQueue")          +
+  " T "    +AsC_("Vomnibar.activateTabs")                  + " <a-f> " + AsC_("LinkHints.activateOpenInNewTab")       +
+  " <a-s-f> " + AsC_("LinkHints.activateWithQueue")       +
+  " ctr "    + AsC_("closeTabsOnRight")                   +
+  " cto "    + AsC_("closeOtherTabs")                     +
   " yv "   +AsC_("LinkHints.activateSelect")               + " yi "    + AsC_("LinkHints.activateCopyImage")          +
   (Build.NDEBUG ? "" : ` <a-s-f12> ${AsC_("debugBackground")} <s-f12> ${CNameLiterals.focusOptions}`)
 
