@@ -45,3 +45,4 @@ scripts/*.pem.enc
 scripts/build*.sh
 .env*
 /dist-*
+bun.loc
