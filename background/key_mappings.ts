@@ -622,7 +622,7 @@ const defaultKeyMappings_: string =
   " J "    +AsC_("previousTab")         +" K "      +AsC_("nextTab")         +" k "      +AsC_("scrollUp")            +
   " l "    +AsC_("scrollRight")         +" L "      +AsC_("goForward")       +" <a-m> "  +AsC_("toggleMuteTab")       +
   " N "    +AsC_("performBackwardsFind")+" n "      +AsC_("performFind")     +" <a-n> "  +AsC_("performAnotherFind")  +
-  " o "    +AsC_("Vomnibar.activate")   +" <a-p> "  +AsC_("togglePinTab")    +" r "      +AsC_("reload")              +
+  " <a-p> "  +AsC_("togglePinTab")    +" r "      +AsC_("reload")              +
   " R "    +AsC_("reloadGivenTab")      +" <a-r> "  +AsC_("reloadTab")       +" <a-s-r> "+AsC_("reopenTab")           +
   " t "    +AsC_("createTab")           +" <a-t> "  +AsC_("createTab")       +" u "      +AsC_("scrollPageUp")        +
   " V "    +AsC_("enterVisualLineMode") +" v "      +AsC_("enterVisualMode") +" <a-v> "  +AsC_("nextTab")             +
@@ -639,7 +639,9 @@ const defaultKeyMappings_: string =
   " T "    +AsC_("Vomnibar.activateTabs")                  + " <a-f> " + AsC_("LinkHints.activateOpenInNewTab")       +
   " <a-s-f> " + AsC_("LinkHints.activateWithQueue")       +
   " ctr "    + AsC_("closeTabsOnRight")                   +
-  " cto "    + AsC_("closeOtherTabs")                     +
+  " cao "    + AsC_("closeOtherTabs")                     +
+  " od "     + AsC_("LinkHints.activateDownloadImage")    +
+  " oi "     + AsC_("LinkHints.activateOpenImage")        +
   " yv "   +AsC_("LinkHints.activateSelect")               + " yi "    + AsC_("LinkHints.activateCopyImage")          +
   (Build.NDEBUG ? "" : ` <a-s-f12> ${AsC_("debugBackground")} <s-f12> ${CNameLiterals.focusOptions}`)
 
@@ -720,7 +722,7 @@ export const availableCommands_: { readonly [key in kCName]: CommandsNS.Descript
   clearCS: [ kBgCmd.clearCS, kCxt.bg, 1 ],
   clearFindHistory: [ kBgCmd.clearFindHistory, kCxt.bg, 1 ],
   closeDownloadBar: [ kBgCmd.closeDownloadBar, kCxt.bg, 1, { all: 1 } ],
-  closeOtherTabs: [ kBgCmd.removeTabsR, kCxt.bg, 1, { other: true, mayConfirm: true } ],
+  closeOtherTabs: [ kBgCmd.removeTabsR, kCxt.bg, 1, { other: true } ],
   closeSomeOtherTabs: [ kBgCmd.removeTabsR, kCxt.bg, 0 ],
   closeTabsOnLeft: [ kBgCmd.removeTabsR, kCxt.bg, 0, { $count: -1e6, mayConfirm: true } ],
   closeTabsOnRight: [ kBgCmd.removeTabsR, kCxt.bg, 0, { $count: 1e6, mayConfirm: true } ],
