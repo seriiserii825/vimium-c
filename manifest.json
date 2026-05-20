@@ -91,10 +91,7 @@
   "omnibox": {
     "keyword": "v"
   },
-  "optional_host_permissions": [
-    "chrome://*/*",
-    "chrome://new-tab-page/*"
-  ],
+  "optional_host_permissions": [],
   "optional_permissions": [
     "bookmarks",
     "downloads",
