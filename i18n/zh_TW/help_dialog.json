@@ -37,6 +37,7 @@
   "HAnd": "）和 ",
   "HEnd": "）。",
   "LinkHints.activate": "點擊網頁中的連結和按鈕",
+  "LinkHints.activateCopyAllText": "複製任意文字元素到剪貼簿",
   "LinkHints.activateCopyImage": "複製圖片到剪貼簿",
   "LinkHints.activateCopyLinkText": "複製連結的文字內容",
   "LinkHints.activateCopyLinkUrl": "複製連結的網址",

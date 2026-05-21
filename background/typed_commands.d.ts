@@ -322,6 +322,7 @@ declare const enum CNameLiterals {
 
 interface CmdNameIds {
   "LinkHints.activate": kFgCmd.linkHints
+  "LinkHints.activateCopyAllText": kFgCmd.linkHints
   "LinkHints.activateCopyImage": kFgCmd.linkHints
   "LinkHints.activateCopyLinkText": kFgCmd.linkHints
   "LinkHints.activateCopyLinkUrl": kFgCmd.linkHints

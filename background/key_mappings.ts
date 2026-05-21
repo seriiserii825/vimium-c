@@ -642,13 +642,17 @@ const defaultKeyMappings_: string =
   " cao "    + AsC_("closeOtherTabs")                     +
   " od "     + AsC_("LinkHints.activateDownloadImage")    +
   " oi "     + AsC_("LinkHints.activateOpenImage")        +
-  " yv "   +AsC_("LinkHints.activateSelect")               + " yi "    + AsC_("LinkHints.activateCopyImage")          +
+  " yv "   +AsC_("LinkHints.activateSelect")               + " yi "    + AsC_("LinkHints.activateCopyImage")         +
+  " yw "   +AsC_("LinkHints.activateCopyAllText")          +
+  " <a-h> " + AsC_("LinkHints.activateHover")             +
+  " yl "   + AsC_("LinkHints.activateCopyLinkText")      +
   (Build.NDEBUG ? "" : ` <a-s-f12> ${AsC_("debugBackground")} <s-f12> ${CNameLiterals.focusOptions}`)
 
 export const availableCommands_: { readonly [key in kCName]: CommandsNS.Description } & SafeObject = {
   __proto__: null as never,
   "LinkHints.activate": [ kFgCmd.linkHints, kCxt.fg, 0, { m: HintMode.DEFAULT } ],
   "LinkHints.activateCopyImage": [ kFgCmd.linkHints, kCxt.fg, 0, { m: HintMode.COPY_IMAGE } ],
+  "LinkHints.activateCopyAllText": [ kFgCmd.linkHints, kCxt.fg, 0, { m: HintMode.ENTER_VISUAL_MODE, copy: 1 as BOOL } ],
   "LinkHints.activateCopyLinkText": [ kFgCmd.linkHints, kCxt.fg, 0, { m: HintMode.COPY_TEXT } ],
   "LinkHints.activateCopyLinkUrl": [ kFgCmd.linkHints, kCxt.fg, 0, { m: HintMode.COPY_URL } ],
   "LinkHints.activateDownloadImage": [ kFgCmd.linkHints, kCxt.fg, 0, { m: HintMode.DOWNLOAD_MEDIA } ],

@@ -331,6 +331,7 @@ declare namespace HintsNS {
     reachable?: null | boolean | /** limits */ number // null means "use settings.mouseReachable and for mouse events"
     richText?: boolean | "safe" | "with-name" | "safe-with-name" | ""
     visual?: false;
+    copy?: BOOL;
     suppressInput?: boolean
     xy?: StdXY | [x: number | "count", y: number | "count", scale?: number]
         | `${number}, ${number}` | number | string | boolean | void

@@ -865,6 +865,10 @@ export const getVisibleElements = (view: ViewBox): readonly Hint[] => {
             }
             return
         }
+        if (hintOptions.copy) {
+          if (element.textContent!.trim().length > 2) { getIfOnlyVisible(hints, element) }
+          return
+        }
         const arr = element.childNodes as NodeList
         if (!(Build.BTypes & BrowserType.Chrome) || Build.MinCVer >= BrowserVer.MinEnsured$ForOf$ForDOMListTypes) {
           for (const node of arr as ArrayLike<Node> as Node[]) {

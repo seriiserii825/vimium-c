@@ -687,6 +687,8 @@ const doPostAction = (): Rect | null => {
       openTextOrUrl(getUrlData())
     } else if (mode1_ < HintMode.max_edit + 1) {
       copyText()
+    } else if (hintOptions.copy) {
+      copyText((clickEl as SafeHTMLElement).innerText.trim() || extractTextContent())
     } else { // HintMode.ENTER_VISUAL_MODE
       selectAllOfNode(clickEl)
       const sel = getSelection_(), caret = hintOptions.caret
